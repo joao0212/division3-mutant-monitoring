@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: joao0212/monitoring-mutants:v5
+        image: joao0212/monitoring-mutants:v6
         resources:
           limits:
             memory: "128Mi"
