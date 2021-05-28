@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scylladb
+spec:
+  selector:
+    matchLabels:
+      app: scylladb-labels
+  template:
+    metadata:
+      labels:
+        app: scylladb-labels
+    spec:
+      containers:
+      - name: scylladb-image
+        image: scylladb/scylla:4.1.0
+        ports:
+          - containerPort: 9042
