@@ -25,3 +25,5 @@ spec:
             value: scylladb-service:9042
           - name: SCYLLADB_DATACENTER
             value: datacenter1
+          - name: SCYLLA_KEYSPACE
+            value: catalog
